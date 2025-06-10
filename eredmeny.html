@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <title>Eredmény</title>
+  <link rel="stylesheet" href="css/eredmeny.css">
+</head>
+<body>
+  <h1>Eredményed</h1>
+  <p id="eredmeny-szoveg">Számolás...</p>
+
+  <a href="tema.html">Vissza a témákhoz</a>
+  <br>
+  <a href="index.html">Vissza a főoldalra</a>
+
+  <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const pontszam = urlParams.get('pontszam');
+    const max = urlParams.get('max');
+    document.getElementById("eredmeny-szoveg").innerText = `Pontszámod: ${pontszam} / ${max}`;
+  </script>
+</body>
+</html>

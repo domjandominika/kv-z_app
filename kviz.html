@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <title>Kvíz</title>
+  <link rel="stylesheet" href="css/kviz.css">
+</head>
+<body>
+  <h1>Kvíz</h1>
+
+  <div id="kerdes-container">
+    <p id="kerdes">Itt lesz a kérdés szövege</p>
+    <ul id="valaszok">
+      <li><button>Válasz 1</button></li>
+      <li><button>Válasz 2</button></li>
+      <li><button>Válasz 3</button></li>
+      <li><button>Válasz 4</button></li>
+    </ul>
+  </div>
+
+  <button id="tovabb-gomb">Tovább</button>
+
+  <script>
+    // Itt lehet majd JS-ben betölteni a kérdéseket a témaválasztás alapján
+    document.getElementById("tovabb-gomb").addEventListener("click", () => {
+      // Ideiglenesen átirányítjuk az eredmény oldalra
+      window.location.href = "eredmeny.html?pontszam=3&max=5";
+    });
+  </script>
+</body>
+</html>
